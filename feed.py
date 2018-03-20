@@ -1,11 +1,14 @@
 import pylast 
 
-API_KEY = "ada4529ad4a007695ea71ab23da78dac"
-API_SECRET = "a8d9caa037bc7b31c23c54339ad39a2d"
+# Add your API keys here
+API_KEY = ""
+API_SECRET = ""
 
 lastfm_network = pylast.LastFMNetwork(api_key = API_KEY, api_secret = API_SECRET)
 
-user = lastfm_network.get_user("m_degenaro")
+
+# Add your username
+user = lastfm_network.get_user("")
 
 friends_list = user.get_friends()
 
